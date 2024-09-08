@@ -1,4 +1,6 @@
-package org.example;
+package org.example.models;
+
+import org.example.enums.StudyProfile;
 
 public class University {
     private String id;
@@ -47,8 +49,8 @@ public class University {
         this.yearOfFoundation = yearOfFoundation;
     }
 
-    public String getMainProfile() {
-        return mainProfile.toString();
+    public StudyProfile getMainProfile() {
+        return mainProfile;
     }
 
     @Override
