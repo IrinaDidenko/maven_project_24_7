@@ -4,11 +4,14 @@ import org.example.comparators.StudentComparator;
 import org.example.comparators.UniversityComparator;
 import org.example.enums.StudentComparatorType;
 import org.example.enums.UniversityComparatorType;
+import org.example.models.Statistics;
 import org.example.models.Student;
 import org.example.models.University;
-import org.example.readerxlsx.xlsxRead;
+import org.example.utility.StatisticsUnil;
+import org.example.xlsxActions.xlsxRead;
 import org.example.utility.ComparatorUtil;
 import org.example.utility.JsonUtil;
+import org.example.xlsxActions.xlsxWrite;
 
 import java.io.IOException;
 import java.util.List;
@@ -16,7 +19,7 @@ import java.util.List;
 public class Main {
     private static String filePath = "src/main/resources/universityInfo.xlsx";
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception {
         /*Universities operations*/
         List<University> universities =
                 xlsxRead.getUnivercities(filePath);
@@ -63,5 +66,8 @@ public class Main {
             Student studentFromJson = JsonUtil.StudentDeSerialize(studentJson);
             System.out.println(studentFromJson.toString());
         });
+
+        List<Statistics>statisticsList= StatisticsUnil.formStatistics(students, universities);
+        xlsxWrite.writeXlsx("statistics.xlsx", statisticsList);
     }
 }
