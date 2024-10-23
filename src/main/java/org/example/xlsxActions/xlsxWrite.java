@@ -4,13 +4,15 @@ import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellStyle;
 import org.apache.poi.ss.usermodel.Font;
 import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.example.models.Statistics;
 
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class xlsxWrite {
     private xlsxWrite() {
@@ -18,9 +20,11 @@ public class xlsxWrite {
 
     ;
 
+    private static final Logger logger = Logger.getLogger(xlsxWrite.class.getName());
     //write xlsx method
 
     public static void writeXlsx(String fileName, List<Statistics> statisticsList) throws Exception {
+        logger.log(Level.INFO, "Starting write xlsx file");
         XSSFWorkbook workbook = new XSSFWorkbook();
         XSSFSheet spreadsheetStatistics = workbook.createSheet("Statistics");
         //   XSSFRow row;
@@ -70,7 +74,11 @@ public class xlsxWrite {
 
         try (FileOutputStream outputStream = new FileOutputStream(fileName)) {
             workbook.write(outputStream);
+        }catch (IOException e){
+            logger.log(Level.SEVERE,"Failed to write data into xlsx file");
+            return;
         }
+        logger.log(Level.INFO,"Data has been written into xlsx file successfully");
 
     }
 }

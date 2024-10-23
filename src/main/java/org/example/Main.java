@@ -7,67 +7,49 @@ import org.example.enums.UniversityComparatorType;
 import org.example.models.Statistics;
 import org.example.models.Student;
 import org.example.models.University;
-import org.example.utility.StatisticsUnil;
+import org.example.utility.StatisticsUtil;
 import org.example.xlsxActions.xlsxRead;
 import org.example.utility.ComparatorUtil;
-import org.example.utility.JsonUtil;
 import org.example.xlsxActions.xlsxWrite;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.logging.LogManager;
+import java.util.logging.Logger;
+
+import static java.util.logging.Level.INFO;
 
 public class Main {
+    private static final Logger logger = Logger.getLogger(Main.class.getName());
+
     private static String filePath = "src/main/resources/universityInfo.xlsx";
 
     public static void main(String[] args) throws Exception {
+
+
+        try {
+            LogManager.getLogManager().readConfiguration(
+                    Main.class.getResourceAsStream("/logging.properties"));
+        } catch (IOException e) {
+            System.err.println("Could not setup logger configuration: " + e.toString());
+        }
+
+        logger.log(INFO, "Application started, Logger configured");
+
         /*Universities operations*/
         List<University> universities =
                 xlsxRead.getUnivercities(filePath);
 
         UniversityComparator universityComparator = ComparatorUtil.getUniversityComparator(UniversityComparatorType.YEAR);
-        universities.stream().sorted(universityComparator).forEach(System.out::println);
-        String universitiesJson = JsonUtil.UniListSerialize(universities);
-        System.out.println("Universisites list in JSON format: \n "+universitiesJson+"\n =========================================");
-        List<University> unisFromJson = JsonUtil.UniListDeSerialize(universitiesJson);
-        if (unisFromJson.size() == universities.size()) {
-            System.out.println("Deserialize ended successfully");
-        } else {
-            System.out.println("Something went wrong. Deserialize ended unsuccessfully");
-        }
 
-        universities.forEach(university -> {
-            String universityJson = JsonUtil.UniversitySerialize(university);
-            System.out.println(universityJson);
-            University uniFromJson = JsonUtil.UniversityDeSerialize(universityJson);
-            System.out.println(uniFromJson.toString());
-        });
 /*Students operations*/
         List<Student> students =
                 xlsxRead.getStudents(filePath);
-        for (Student student : students) {
-            System.out.println(student);
-        }
 
         StudentComparator studentComparator = ComparatorUtil.getStudentComparator(StudentComparatorType.FULL_NAME);
-        students.stream().sorted(studentComparator).forEach(System.out::println);
 
-        String studentsJson = JsonUtil.StuListSerialize(students);
-        System.out.println("Students list in JSON format: \n "+studentsJson+"\n =========================================");
-        List<Student> stuFromJson = JsonUtil.StuListDeSerialize(studentsJson);
-        if (stuFromJson.size() == students.size()) {
-            System.out.println("Deserialize ended successfully");
-        } else {
-            System.out.println("Something went wrong. Deserialize ended unsuccessfully");
-        }
-
-        students.forEach(student -> {
-            String studentJson = JsonUtil.StudentSerialize(student);
-            System.out.println(studentJson);
-            Student studentFromJson = JsonUtil.StudentDeSerialize(studentJson);
-            System.out.println(studentFromJson.toString());
-        });
-
-        List<Statistics>statisticsList= StatisticsUnil.formStatistics(students, universities);
+        List<Statistics>statisticsList= StatisticsUtil.formStatistics(students, universities);
         xlsxWrite.writeXlsx("statistics.xlsx", statisticsList);
+        logger.log(INFO, "Application finished its work. Job is done");
     }
 }

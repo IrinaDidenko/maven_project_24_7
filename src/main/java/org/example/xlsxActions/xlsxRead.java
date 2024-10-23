@@ -14,38 +14,54 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+import static java.util.logging.Level.INFO;
+import static java.util.logging.Level.SEVERE;
 
 public class xlsxRead {
     private xlsxRead() {
     }//приватный конструктор
 
+    private static final Logger logger = Logger.getLogger(xlsxRead.class.getName());
     //метод чтения студентов
     public static List<Student> getStudents(String filePath) throws FileNotFoundException, IOException {
         List<Student> stuList = new ArrayList<>();
+       try {
+           logger.log(INFO, "Starting read xlsx file: students sheet");
 
-        FileInputStream inputStream = new FileInputStream(filePath);
-        XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
-        XSSFSheet sheet = workbook.getSheet("Студенты");
 
-        Iterator<Row> rows = sheet.iterator();
-        rows.next();
+           FileInputStream inputStream = new FileInputStream(filePath);
+           XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
+           XSSFSheet sheet = workbook.getSheet("Студенты");
 
-        while (rows.hasNext()) {
-            Row currentRow = rows.next();
-            Student student = new Student();
-            stuList.add(student);
-            student.setUniversityId(currentRow.getCell(0).getStringCellValue());
-            student.setFullName(currentRow.getCell(1).getStringCellValue());
-            student.setCurrentCourseNumber((int)currentRow.getCell(2).getNumericCellValue());
-            student.setAvgExamScore((float)currentRow.getCell(3).getNumericCellValue());
-        }
-            return stuList;
-        }
+           Iterator<Row> rows = sheet.iterator();
+           rows.next();
+
+           while (rows.hasNext()) {
+               Row currentRow = rows.next();
+               Student student = new Student();
+               stuList.add(student);
+               student.setUniversityId(currentRow.getCell(0).getStringCellValue());
+               student.setFullName(currentRow.getCell(1).getStringCellValue());
+               student.setCurrentCourseNumber((int) currentRow.getCell(2).getNumericCellValue());
+               student.setAvgExamScore((float) currentRow.getCell(3).getNumericCellValue());
+           }
+       } catch (IOException e ){
+           logger.log(Level.SEVERE, "Error while reading xlsx file: students sheet");
+           return  stuList;
+       }
+        logger.log(INFO, "Reading xlsx file: students sheet finished successfully");
+       return stuList;
+
+    }
 
 
     //метод чтения университетов
     public static List<University> getUnivercities(String filePath) throws FileNotFoundException, IOException {
         Sheet sheet1;
+        logger.log(INFO, "Starting read xlsx file: Universities sheet");
         ArrayList<University> unilist = new ArrayList<University>();
         try (
                 Workbook wb = WorkbookFactory.create(new File(filePath))) {
@@ -62,8 +78,15 @@ public class xlsxRead {
                 University e = new University(id, fullName, shortName, yearOfFoundation, mainProfile);
                 unilist.add(e);
             }
-            return unilist;
+
+        } catch (IOException e)
+        {logger.log(SEVERE, "Error while reading xlsx file: Universities sheet");
+            return unilist;}
+        logger.log(INFO, "Reading xlsx file: Universities sheet finished successfully");
+        return unilist;
+
         }
+
     }
 
-}
+
