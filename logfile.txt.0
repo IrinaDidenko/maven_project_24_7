@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2024-10-23T10:35:18.366477Z</date>
+  <millis>1729679718366</millis>
+  <nanos>477000</nanos>
+  <sequence>0</sequence>
+  <logger>org.example.Main</logger>
+  <level>INFO</level>
+  <class>org.example.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Application started, Logger configured</message>
+</record>
+<record>
+  <date>2024-10-23T10:35:18.409907Z</date>
+  <millis>1729679718409</millis>
+  <nanos>907000</nanos>
+  <sequence>1</sequence>
+  <logger>org.example.xlsxActions.xlsxRead</logger>
+  <level>INFO</level>
+  <class>org.example.xlsxActions.xlsxRead</class>
+  <method>getUnivercities</method>
+  <thread>1</thread>
+  <message>Starting read xlsx file: Universities sheet</message>
+</record>
+<record>
+  <date>2024-10-23T10:35:19.031521Z</date>
+  <millis>1729679719031</millis>
+  <nanos>521000</nanos>
+  <sequence>2</sequence>
+  <logger>org.example.xlsxActions.xlsxRead</logger>
+  <level>INFO</level>
+  <class>org.example.xlsxActions.xlsxRead</class>
+  <method>getUnivercities</method>
+  <thread>1</thread>
+  <message>Reading xlsx file: Universities sheet finished successfully</message>
+</record>
+<record>
+  <date>2024-10-23T10:35:19.032714Z</date>
+  <millis>1729679719032</millis>
+  <nanos>714000</nanos>
+  <sequence>3</sequence>
+  <logger>org.example.xlsxActions.xlsxRead</logger>
+  <level>INFO</level>
+  <class>org.example.xlsxActions.xlsxRead</class>
+  <method>getStudents</method>
+  <thread>1</thread>
+  <message>Starting read xlsx file: students sheet</message>
+</record>
+<record>
+  <date>2024-10-23T10:35:19.052279Z</date>
+  <millis>1729679719052</millis>
+  <nanos>279000</nanos>
+  <sequence>4</sequence>
+  <logger>org.example.xlsxActions.xlsxRead</logger>
+  <level>INFO</level>
+  <class>org.example.xlsxActions.xlsxRead</class>
+  <method>getStudents</method>
+  <thread>1</thread>
+  <message>Reading xlsx file: students sheet finished successfully</message>
+</record>
+<record>
+  <date>2024-10-23T10:35:19.053059Z</date>
+  <millis>1729679719053</millis>
+  <nanos>59000</nanos>
+  <sequence>5</sequence>
+  <logger>org.example.utility.StatisticsUtil</logger>
+  <level>INFO</level>
+  <class>org.example.utility.StatisticsUtil</class>
+  <method>formStatistics</method>
+  <thread>1</thread>
+  <message>Calculating statistics started</message>
+</record>
+<record>
+  <date>2024-10-23T10:35:19.056967Z</date>
+  <millis>1729679719056</millis>
+  <nanos>967000</nanos>
+  <sequence>6</sequence>
+  <logger>org.example.utility.StatisticsUtil</logger>
+  <level>INFO</level>
+  <class>org.example.utility.StatisticsUtil</class>
+  <method>formStatistics</method>
+  <thread>1</thread>
+  <message>Calculating statistics finished successfully. 
+ Statistic list is 4 rows long. </message>
+</record>
+<record>
+  <date>2024-10-23T10:35:19.057522Z</date>
+  <millis>1729679719057</millis>
+  <nanos>522000</nanos>
+  <sequence>7</sequence>
+  <logger>org.example.xlsxActions.xlsxWrite</logger>
+  <level>INFO</level>
+  <class>org.example.xlsxActions.xlsxWrite</class>
+  <method>writeXlsx</method>
+  <thread>1</thread>
+  <message>Starting write xlsx file</message>
+</record>
+<record>
+  <date>2024-10-23T10:35:19.106070Z</date>
+  <millis>1729679719106</millis>
+  <nanos>70000</nanos>
+  <sequence>8</sequence>
+  <logger>org.example.xlsxActions.xlsxWrite</logger>
+  <level>INFO</level>
+  <class>org.example.xlsxActions.xlsxWrite</class>
+  <method>writeXlsx</method>
+  <thread>1</thread>
+  <message>Data has been written into xlsx file successfully</message>
+</record>
+<record>
+  <date>2024-10-23T10:35:19.106344Z</date>
+  <millis>1729679719106</millis>
+  <nanos>344000</nanos>
+  <sequence>9</sequence>
+  <logger>org.example.Main</logger>
+  <level>INFO</level>
+  <class>org.example.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Application finished its work. Job is done</message>
+</record>
+</log>
