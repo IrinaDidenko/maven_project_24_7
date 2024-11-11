@@ -123,3 +123,128 @@
   <message>Application finished its work. Job is done</message>
 </record>
 </log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2024-11-02T14:13:46.386871Z</date>
+  <millis>1730556826386</millis>
+  <nanos>871000</nanos>
+  <sequence>0</sequence>
+  <logger>org.example.Main</logger>
+  <level>INFO</level>
+  <class>org.example.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Application started, Logger configured</message>
+</record>
+<record>
+  <date>2024-11-02T14:13:46.638198500Z</date>
+  <millis>1730556826638</millis>
+  <nanos>198500</nanos>
+  <sequence>1</sequence>
+  <logger>org.example.xlsxActions.xlsxRead</logger>
+  <level>INFO</level>
+  <class>org.example.xlsxActions.xlsxRead</class>
+  <method>getUnivercities</method>
+  <thread>1</thread>
+  <message>Starting read xlsx file: Universities sheet</message>
+</record>
+<record>
+  <date>2024-11-02T14:13:50.730263200Z</date>
+  <millis>1730556830730</millis>
+  <nanos>263200</nanos>
+  <sequence>2</sequence>
+  <logger>org.example.xlsxActions.xlsxRead</logger>
+  <level>INFO</level>
+  <class>org.example.xlsxActions.xlsxRead</class>
+  <method>getUnivercities</method>
+  <thread>1</thread>
+  <message>Reading xlsx file: Universities sheet finished successfully</message>
+</record>
+<record>
+  <date>2024-11-02T14:13:50.809052800Z</date>
+  <millis>1730556830809</millis>
+  <nanos>52800</nanos>
+  <sequence>3</sequence>
+  <logger>org.example.xlsxActions.xlsxRead</logger>
+  <level>INFO</level>
+  <class>org.example.xlsxActions.xlsxRead</class>
+  <method>getStudents</method>
+  <thread>1</thread>
+  <message>Starting read xlsx file: students sheet</message>
+</record>
+<record>
+  <date>2024-11-02T14:13:50.931725Z</date>
+  <millis>1730556830931</millis>
+  <nanos>725000</nanos>
+  <sequence>4</sequence>
+  <logger>org.example.xlsxActions.xlsxRead</logger>
+  <level>INFO</level>
+  <class>org.example.xlsxActions.xlsxRead</class>
+  <method>getStudents</method>
+  <thread>1</thread>
+  <message>Reading xlsx file: students sheet finished successfully</message>
+</record>
+<record>
+  <date>2024-11-02T14:13:50.965634100Z</date>
+  <millis>1730556830965</millis>
+  <nanos>634100</nanos>
+  <sequence>5</sequence>
+  <logger>org.example.utility.StatisticsUtil</logger>
+  <level>INFO</level>
+  <class>org.example.utility.StatisticsUtil</class>
+  <method>formStatistics</method>
+  <thread>1</thread>
+  <message>Calculating statistics started</message>
+</record>
+<record>
+  <date>2024-11-02T14:13:50.992562300Z</date>
+  <millis>1730556830992</millis>
+  <nanos>562300</nanos>
+  <sequence>6</sequence>
+  <logger>org.example.utility.StatisticsUtil</logger>
+  <level>INFO</level>
+  <class>org.example.utility.StatisticsUtil</class>
+  <method>formStatistics</method>
+  <thread>1</thread>
+  <message>Calculating statistics finished successfully. 
+ Statistic list is 4 rows long. </message>
+</record>
+<record>
+  <date>2024-11-02T14:13:51.013506900Z</date>
+  <millis>1730556831013</millis>
+  <nanos>506900</nanos>
+  <sequence>7</sequence>
+  <logger>org.example.xlsxActions.xlsxWrite</logger>
+  <level>INFO</level>
+  <class>org.example.xlsxActions.xlsxWrite</class>
+  <method>writeXlsx</method>
+  <thread>1</thread>
+  <message>Starting write xlsx file</message>
+</record>
+<record>
+  <date>2024-11-02T14:13:51.289768500Z</date>
+  <millis>1730556831289</millis>
+  <nanos>768500</nanos>
+  <sequence>8</sequence>
+  <logger>org.example.xlsxActions.xlsxWrite</logger>
+  <level>INFO</level>
+  <class>org.example.xlsxActions.xlsxWrite</class>
+  <method>writeXlsx</method>
+  <thread>1</thread>
+  <message>Data has been written into xlsx file successfully</message>
+</record>
+<record>
+  <date>2024-11-02T14:13:51.290765800Z</date>
+  <millis>1730556831290</millis>
+  <nanos>765800</nanos>
+  <sequence>9</sequence>
+  <logger>org.example.Main</logger>
+  <level>INFO</level>
+  <class>org.example.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Application finished its work. Job is done</message>
+</record>
+</log>

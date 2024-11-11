@@ -4,15 +4,18 @@ import org.example.comparators.StudentComparator;
 import org.example.comparators.UniversityComparator;
 import org.example.enums.StudentComparatorType;
 import org.example.enums.UniversityComparatorType;
+import org.example.models.DataStructure;
 import org.example.models.Statistics;
 import org.example.models.Student;
 import org.example.models.University;
 import org.example.utility.StatisticsUtil;
+import org.example.utility.XmlWriter;
 import org.example.xlsxActions.xlsxRead;
 import org.example.utility.ComparatorUtil;
 import org.example.xlsxActions.xlsxWrite;
 
 import java.io.IOException;
+import java.util.Date;
 import java.util.List;
 import java.util.logging.LogManager;
 import java.util.logging.Logger;
@@ -42,7 +45,7 @@ public class Main {
 
         UniversityComparator universityComparator = ComparatorUtil.getUniversityComparator(UniversityComparatorType.YEAR);
 
-/*Students operations*/
+        /*Students operations*/
         List<Student> students =
                 xlsxRead.getStudents(filePath);
 
@@ -51,5 +54,13 @@ public class Main {
         List<Statistics>statisticsList= StatisticsUtil.formStatistics(students, universities);
         xlsxWrite.writeXlsx("statistics.xlsx", statisticsList);
         logger.log(INFO, "Application finished its work. Job is done");
+
+        DataStructure dataStructure = new DataStructure();
+        dataStructure.setStudentList(students);
+        dataStructure.setUniversityList(universities);
+        dataStructure.setStatisticsList(statisticsList);
+        dataStructure.setProcessedDate(new Date());
+
+        XmlWriter.generateXml(dataStructure);
     }
 }
