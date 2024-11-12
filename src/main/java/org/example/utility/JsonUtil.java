@@ -14,22 +14,8 @@ public class JsonUtil {
     }
 
     /*to JSON*/
-    public static String StudentSerialize(Student student) {
-
-        return new GsonBuilder().setPrettyPrinting().create().toJson(student);
-
-    }
-
-    public static String UniversitySerialize(University university) {
-        return new GsonBuilder().setPrettyPrinting().create().toJson(university);
-    }
-
-    public static String StuListSerialize(List<Student> students) {
-        return new GsonBuilder().setPrettyPrinting().create().toJson(students);
-    }
-
-    public static String UniListSerialize(List<University> universities) {
-        return new GsonBuilder().setPrettyPrinting().create().toJson(universities);
+    public static String ListToJson(List<?> list) {
+        return new GsonBuilder().setPrettyPrinting().create().toJson(list);
     }
     /*from JSON*/
 

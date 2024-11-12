@@ -248,3 +248,1192 @@
   <message>Application finished its work. Job is done</message>
 </record>
 </log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2024-11-12T09:28:41.090280Z</date>
+  <millis>1731403721090</millis>
+  <nanos>280000</nanos>
+  <sequence>0</sequence>
+  <logger>org.example.Main</logger>
+  <level>INFO</level>
+  <class>org.example.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Application started, Logger configured</message>
+</record>
+<record>
+  <date>2024-11-12T09:28:41.139844Z</date>
+  <millis>1731403721139</millis>
+  <nanos>844000</nanos>
+  <sequence>1</sequence>
+  <logger>org.example.xlsxActions.xlsxRead</logger>
+  <level>INFO</level>
+  <class>org.example.xlsxActions.xlsxRead</class>
+  <method>getUnivercities</method>
+  <thread>1</thread>
+  <message>Starting read xlsx file: Universities sheet</message>
+</record>
+<record>
+  <date>2024-11-12T09:28:41.684267Z</date>
+  <millis>1731403721684</millis>
+  <nanos>267000</nanos>
+  <sequence>2</sequence>
+  <logger>org.example.xlsxActions.xlsxRead</logger>
+  <level>INFO</level>
+  <class>org.example.xlsxActions.xlsxRead</class>
+  <method>getUnivercities</method>
+  <thread>1</thread>
+  <message>Reading xlsx file: Universities sheet finished successfully</message>
+</record>
+<record>
+  <date>2024-11-12T09:28:41.685177Z</date>
+  <millis>1731403721685</millis>
+  <nanos>177000</nanos>
+  <sequence>3</sequence>
+  <logger>org.example.xlsxActions.xlsxRead</logger>
+  <level>INFO</level>
+  <class>org.example.xlsxActions.xlsxRead</class>
+  <method>getStudents</method>
+  <thread>1</thread>
+  <message>Starting read xlsx file: students sheet</message>
+</record>
+<record>
+  <date>2024-11-12T09:28:41.704359Z</date>
+  <millis>1731403721704</millis>
+  <nanos>359000</nanos>
+  <sequence>4</sequence>
+  <logger>org.example.xlsxActions.xlsxRead</logger>
+  <level>INFO</level>
+  <class>org.example.xlsxActions.xlsxRead</class>
+  <method>getStudents</method>
+  <thread>1</thread>
+  <message>Reading xlsx file: students sheet finished successfully</message>
+</record>
+<record>
+  <date>2024-11-12T09:28:41.705054Z</date>
+  <millis>1731403721705</millis>
+  <nanos>54000</nanos>
+  <sequence>5</sequence>
+  <logger>org.example.utility.StatisticsUtil</logger>
+  <level>INFO</level>
+  <class>org.example.utility.StatisticsUtil</class>
+  <method>formStatistics</method>
+  <thread>1</thread>
+  <message>Calculating statistics started</message>
+</record>
+<record>
+  <date>2024-11-12T09:28:41.708166Z</date>
+  <millis>1731403721708</millis>
+  <nanos>166000</nanos>
+  <sequence>6</sequence>
+  <logger>org.example.utility.StatisticsUtil</logger>
+  <level>INFO</level>
+  <class>org.example.utility.StatisticsUtil</class>
+  <method>formStatistics</method>
+  <thread>1</thread>
+  <message>Calculating statistics finished successfully. 
+ Statistic list is 4 rows long. </message>
+</record>
+<record>
+  <date>2024-11-12T09:28:41.708737Z</date>
+  <millis>1731403721708</millis>
+  <nanos>737000</nanos>
+  <sequence>7</sequence>
+  <logger>org.example.xlsxActions.xlsxWrite</logger>
+  <level>INFO</level>
+  <class>org.example.xlsxActions.xlsxWrite</class>
+  <method>writeXlsx</method>
+  <thread>1</thread>
+  <message>Starting write xlsx file</message>
+</record>
+<record>
+  <date>2024-11-12T09:28:41.760448Z</date>
+  <millis>1731403721760</millis>
+  <nanos>448000</nanos>
+  <sequence>8</sequence>
+  <logger>org.example.xlsxActions.xlsxWrite</logger>
+  <level>INFO</level>
+  <class>org.example.xlsxActions.xlsxWrite</class>
+  <method>writeXlsx</method>
+  <thread>1</thread>
+  <message>Data has been written into xlsx file successfully</message>
+</record>
+<record>
+  <date>2024-11-12T09:28:41.761228Z</date>
+  <millis>1731403721761</millis>
+  <nanos>228000</nanos>
+  <sequence>9</sequence>
+  <logger>org.example.utility.XmlWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.XmlWriter</class>
+  <method>generateXml</method>
+  <thread>1</thread>
+  <message>XML marshalling is started</message>
+</record>
+<record>
+  <date>2024-11-12T09:28:41.824349Z</date>
+  <millis>1731403721824</millis>
+  <nanos>349000</nanos>
+  <sequence>10</sequence>
+  <logger>org.example.utility.XmlWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.XmlWriter</class>
+  <method>generateXml</method>
+  <thread>1</thread>
+  <message>New directory created successfully </message>
+</record>
+<record>
+  <date>2024-11-12T09:28:41.824679Z</date>
+  <millis>1731403721824</millis>
+  <nanos>679000</nanos>
+  <sequence>11</sequence>
+  <logger>org.example.utility.XmlWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.XmlWriter</class>
+  <method>generateXml</method>
+  <thread>1</thread>
+  <message>Directory is already exist</message>
+</record>
+<record>
+  <date>2024-11-12T09:28:41.830710Z</date>
+  <millis>1731403721830</millis>
+  <nanos>710000</nanos>
+  <sequence>12</sequence>
+  <logger>org.example.utility.XmlWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.XmlWriter</class>
+  <method>generateXml</method>
+  <thread>1</thread>
+  <message>XML marshalling finished successfully </message>
+</record>
+<record>
+  <date>2024-11-12T09:28:41.830936Z</date>
+  <millis>1731403721830</millis>
+  <nanos>936000</nanos>
+  <sequence>13</sequence>
+  <logger>org.example.Main</logger>
+  <level>INFO</level>
+  <class>org.example.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Application finished its work. Job is done</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2024-11-12T11:21:51.007397Z</date>
+  <millis>1731410511007</millis>
+  <nanos>397000</nanos>
+  <sequence>0</sequence>
+  <logger>org.example.Main</logger>
+  <level>INFO</level>
+  <class>org.example.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Application started, Logger configured</message>
+</record>
+<record>
+  <date>2024-11-12T11:21:51.045451Z</date>
+  <millis>1731410511045</millis>
+  <nanos>451000</nanos>
+  <sequence>1</sequence>
+  <logger>org.example.xlsxActions.xlsxRead</logger>
+  <level>INFO</level>
+  <class>org.example.xlsxActions.xlsxRead</class>
+  <method>getUnivercities</method>
+  <thread>1</thread>
+  <message>Starting read xlsx file: Universities sheet</message>
+</record>
+<record>
+  <date>2024-11-12T11:21:51.650589Z</date>
+  <millis>1731410511650</millis>
+  <nanos>589000</nanos>
+  <sequence>2</sequence>
+  <logger>org.example.xlsxActions.xlsxRead</logger>
+  <level>INFO</level>
+  <class>org.example.xlsxActions.xlsxRead</class>
+  <method>getUnivercities</method>
+  <thread>1</thread>
+  <message>Reading xlsx file: Universities sheet finished successfully</message>
+</record>
+<record>
+  <date>2024-11-12T11:21:51.651849Z</date>
+  <millis>1731410511651</millis>
+  <nanos>849000</nanos>
+  <sequence>3</sequence>
+  <logger>org.example.xlsxActions.xlsxRead</logger>
+  <level>INFO</level>
+  <class>org.example.xlsxActions.xlsxRead</class>
+  <method>getStudents</method>
+  <thread>1</thread>
+  <message>Starting read xlsx file: students sheet</message>
+</record>
+<record>
+  <date>2024-11-12T11:21:51.671011Z</date>
+  <millis>1731410511671</millis>
+  <nanos>11000</nanos>
+  <sequence>4</sequence>
+  <logger>org.example.xlsxActions.xlsxRead</logger>
+  <level>INFO</level>
+  <class>org.example.xlsxActions.xlsxRead</class>
+  <method>getStudents</method>
+  <thread>1</thread>
+  <message>Reading xlsx file: students sheet finished successfully</message>
+</record>
+<record>
+  <date>2024-11-12T11:21:51.671717Z</date>
+  <millis>1731410511671</millis>
+  <nanos>717000</nanos>
+  <sequence>5</sequence>
+  <logger>org.example.utility.StatisticsUtil</logger>
+  <level>INFO</level>
+  <class>org.example.utility.StatisticsUtil</class>
+  <method>formStatistics</method>
+  <thread>1</thread>
+  <message>Calculating statistics started</message>
+</record>
+<record>
+  <date>2024-11-12T11:21:51.676189Z</date>
+  <millis>1731410511676</millis>
+  <nanos>189000</nanos>
+  <sequence>6</sequence>
+  <logger>org.example.utility.StatisticsUtil</logger>
+  <level>INFO</level>
+  <class>org.example.utility.StatisticsUtil</class>
+  <method>formStatistics</method>
+  <thread>1</thread>
+  <message>Calculating statistics finished successfully. 
+ Statistic list is 4 rows long. </message>
+</record>
+<record>
+  <date>2024-11-12T11:21:51.676748Z</date>
+  <millis>1731410511676</millis>
+  <nanos>748000</nanos>
+  <sequence>7</sequence>
+  <logger>org.example.xlsxActions.xlsxWrite</logger>
+  <level>INFO</level>
+  <class>org.example.xlsxActions.xlsxWrite</class>
+  <method>writeXlsx</method>
+  <thread>1</thread>
+  <message>Starting write xlsx file</message>
+</record>
+<record>
+  <date>2024-11-12T11:21:51.728157Z</date>
+  <millis>1731410511728</millis>
+  <nanos>157000</nanos>
+  <sequence>8</sequence>
+  <logger>org.example.xlsxActions.xlsxWrite</logger>
+  <level>INFO</level>
+  <class>org.example.xlsxActions.xlsxWrite</class>
+  <method>writeXlsx</method>
+  <thread>1</thread>
+  <message>Data has been written into xlsx file successfully</message>
+</record>
+<record>
+  <date>2024-11-12T11:21:51.729046Z</date>
+  <millis>1731410511729</millis>
+  <nanos>46000</nanos>
+  <sequence>9</sequence>
+  <logger>org.example.utility.XmlWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.XmlWriter</class>
+  <method>generateXml</method>
+  <thread>1</thread>
+  <message>XML marshalling is started</message>
+</record>
+<record>
+  <date>2024-11-12T11:21:51.792418Z</date>
+  <millis>1731410511792</millis>
+  <nanos>418000</nanos>
+  <sequence>10</sequence>
+  <logger>org.example.utility.XmlWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.XmlWriter</class>
+  <method>generateXml</method>
+  <thread>1</thread>
+  <message>New directory created successfully </message>
+</record>
+<record>
+  <date>2024-11-12T11:21:51.792730Z</date>
+  <millis>1731410511792</millis>
+  <nanos>730000</nanos>
+  <sequence>11</sequence>
+  <logger>org.example.utility.XmlWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.XmlWriter</class>
+  <method>generateXml</method>
+  <thread>1</thread>
+  <message>Directory is already exist</message>
+</record>
+<record>
+  <date>2024-11-12T11:21:51.798331Z</date>
+  <millis>1731410511798</millis>
+  <nanos>331000</nanos>
+  <sequence>12</sequence>
+  <logger>org.example.utility.XmlWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.XmlWriter</class>
+  <method>generateXml</method>
+  <thread>1</thread>
+  <message>XML marshalling finished successfully </message>
+</record>
+<record>
+  <date>2024-11-12T11:21:51.798762Z</date>
+  <millis>1731410511798</millis>
+  <nanos>762000</nanos>
+  <sequence>13</sequence>
+  <logger>org.example.utility.JsonWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.JsonWriter</class>
+  <method>generateJson</method>
+  <thread>1</thread>
+  <message>JSON writing started</message>
+</record>
+<record>
+  <date>2024-11-12T11:21:51.799044Z</date>
+  <millis>1731410511799</millis>
+  <nanos>44000</nanos>
+  <sequence>14</sequence>
+  <logger>org.example.utility.JsonWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.JsonWriter</class>
+  <method>generateJson</method>
+  <thread>1</thread>
+  <message>Directory is already exist</message>
+</record>
+<record>
+  <date>2024-11-12T11:21:51.814135Z</date>
+  <millis>1731410511814</millis>
+  <nanos>135000</nanos>
+  <sequence>15</sequence>
+  <logger>org.example.utility.JsonWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.JsonWriter</class>
+  <method>studentsJson</method>
+  <thread>1</thread>
+  <message>Student JSON created successfully</message>
+</record>
+<record>
+  <date>2024-11-12T11:21:51.815463Z</date>
+  <millis>1731410511815</millis>
+  <nanos>463000</nanos>
+  <sequence>16</sequence>
+  <logger>org.example.utility.JsonWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.JsonWriter</class>
+  <method>universityJson</method>
+  <thread>1</thread>
+  <message>University JSON created successfully</message>
+</record>
+<record>
+  <date>2024-11-12T11:21:51.816272Z</date>
+  <millis>1731410511816</millis>
+  <nanos>272000</nanos>
+  <sequence>17</sequence>
+  <logger>org.example.utility.JsonWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.JsonWriter</class>
+  <method>statisticsJson</method>
+  <thread>1</thread>
+  <message>Statistics JSON created successfully</message>
+</record>
+<record>
+  <date>2024-11-12T11:21:51.816450Z</date>
+  <millis>1731410511816</millis>
+  <nanos>450000</nanos>
+  <sequence>18</sequence>
+  <logger>org.example.utility.JsonWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.JsonWriter</class>
+  <method>generateJson</method>
+  <thread>1</thread>
+  <message>JSON writing finished successfully</message>
+</record>
+<record>
+  <date>2024-11-12T11:21:51.816613Z</date>
+  <millis>1731410511816</millis>
+  <nanos>613000</nanos>
+  <sequence>19</sequence>
+  <logger>org.example.Main</logger>
+  <level>INFO</level>
+  <class>org.example.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Application finished its work. Job is done</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2024-11-12T11:24:25.731331Z</date>
+  <millis>1731410665731</millis>
+  <nanos>331000</nanos>
+  <sequence>0</sequence>
+  <logger>org.example.Main</logger>
+  <level>INFO</level>
+  <class>org.example.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Application started, Logger configured</message>
+</record>
+<record>
+  <date>2024-11-12T11:24:25.780466Z</date>
+  <millis>1731410665780</millis>
+  <nanos>466000</nanos>
+  <sequence>1</sequence>
+  <logger>org.example.xlsxActions.xlsxRead</logger>
+  <level>INFO</level>
+  <class>org.example.xlsxActions.xlsxRead</class>
+  <method>getUnivercities</method>
+  <thread>1</thread>
+  <message>Starting read xlsx file: Universities sheet</message>
+</record>
+<record>
+  <date>2024-11-12T11:24:26.310327Z</date>
+  <millis>1731410666310</millis>
+  <nanos>327000</nanos>
+  <sequence>2</sequence>
+  <logger>org.example.xlsxActions.xlsxRead</logger>
+  <level>INFO</level>
+  <class>org.example.xlsxActions.xlsxRead</class>
+  <method>getUnivercities</method>
+  <thread>1</thread>
+  <message>Reading xlsx file: Universities sheet finished successfully</message>
+</record>
+<record>
+  <date>2024-11-12T11:24:26.311177Z</date>
+  <millis>1731410666311</millis>
+  <nanos>177000</nanos>
+  <sequence>3</sequence>
+  <logger>org.example.xlsxActions.xlsxRead</logger>
+  <level>INFO</level>
+  <class>org.example.xlsxActions.xlsxRead</class>
+  <method>getStudents</method>
+  <thread>1</thread>
+  <message>Starting read xlsx file: students sheet</message>
+</record>
+<record>
+  <date>2024-11-12T11:24:26.329951Z</date>
+  <millis>1731410666329</millis>
+  <nanos>951000</nanos>
+  <sequence>4</sequence>
+  <logger>org.example.xlsxActions.xlsxRead</logger>
+  <level>INFO</level>
+  <class>org.example.xlsxActions.xlsxRead</class>
+  <method>getStudents</method>
+  <thread>1</thread>
+  <message>Reading xlsx file: students sheet finished successfully</message>
+</record>
+<record>
+  <date>2024-11-12T11:24:26.330719Z</date>
+  <millis>1731410666330</millis>
+  <nanos>719000</nanos>
+  <sequence>5</sequence>
+  <logger>org.example.utility.StatisticsUtil</logger>
+  <level>INFO</level>
+  <class>org.example.utility.StatisticsUtil</class>
+  <method>formStatistics</method>
+  <thread>1</thread>
+  <message>Calculating statistics started</message>
+</record>
+<record>
+  <date>2024-11-12T11:24:26.335046Z</date>
+  <millis>1731410666335</millis>
+  <nanos>46000</nanos>
+  <sequence>6</sequence>
+  <logger>org.example.utility.StatisticsUtil</logger>
+  <level>INFO</level>
+  <class>org.example.utility.StatisticsUtil</class>
+  <method>formStatistics</method>
+  <thread>1</thread>
+  <message>Calculating statistics finished successfully. 
+ Statistic list is 4 rows long. </message>
+</record>
+<record>
+  <date>2024-11-12T11:24:26.335601Z</date>
+  <millis>1731410666335</millis>
+  <nanos>601000</nanos>
+  <sequence>7</sequence>
+  <logger>org.example.xlsxActions.xlsxWrite</logger>
+  <level>INFO</level>
+  <class>org.example.xlsxActions.xlsxWrite</class>
+  <method>writeXlsx</method>
+  <thread>1</thread>
+  <message>Starting write xlsx file</message>
+</record>
+<record>
+  <date>2024-11-12T11:24:26.386255Z</date>
+  <millis>1731410666386</millis>
+  <nanos>255000</nanos>
+  <sequence>8</sequence>
+  <logger>org.example.xlsxActions.xlsxWrite</logger>
+  <level>INFO</level>
+  <class>org.example.xlsxActions.xlsxWrite</class>
+  <method>writeXlsx</method>
+  <thread>1</thread>
+  <message>Data has been written into xlsx file successfully</message>
+</record>
+<record>
+  <date>2024-11-12T11:24:26.387009Z</date>
+  <millis>1731410666387</millis>
+  <nanos>9000</nanos>
+  <sequence>9</sequence>
+  <logger>org.example.utility.XmlWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.XmlWriter</class>
+  <method>generateXml</method>
+  <thread>1</thread>
+  <message>XML marshalling is started</message>
+</record>
+<record>
+  <date>2024-11-12T11:24:26.442027Z</date>
+  <millis>1731410666442</millis>
+  <nanos>27000</nanos>
+  <sequence>10</sequence>
+  <logger>org.example.utility.XmlWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.XmlWriter</class>
+  <method>generateXml</method>
+  <thread>1</thread>
+  <message>New directory created successfully </message>
+</record>
+<record>
+  <date>2024-11-12T11:24:26.442331Z</date>
+  <millis>1731410666442</millis>
+  <nanos>331000</nanos>
+  <sequence>11</sequence>
+  <logger>org.example.utility.XmlWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.XmlWriter</class>
+  <method>generateXml</method>
+  <thread>1</thread>
+  <message>Directory is already exist</message>
+</record>
+<record>
+  <date>2024-11-12T11:24:26.447967Z</date>
+  <millis>1731410666447</millis>
+  <nanos>967000</nanos>
+  <sequence>12</sequence>
+  <logger>org.example.utility.XmlWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.XmlWriter</class>
+  <method>generateXml</method>
+  <thread>1</thread>
+  <message>XML marshalling finished successfully </message>
+</record>
+<record>
+  <date>2024-11-12T11:24:26.448358Z</date>
+  <millis>1731410666448</millis>
+  <nanos>358000</nanos>
+  <sequence>13</sequence>
+  <logger>org.example.utility.JsonWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.JsonWriter</class>
+  <method>generateJson</method>
+  <thread>1</thread>
+  <message>JSON writing started</message>
+</record>
+<record>
+  <date>2024-11-12T11:24:26.448594Z</date>
+  <millis>1731410666448</millis>
+  <nanos>594000</nanos>
+  <sequence>14</sequence>
+  <logger>org.example.utility.JsonWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.JsonWriter</class>
+  <method>generateJson</method>
+  <thread>1</thread>
+  <message>New directory created successfully </message>
+</record>
+<record>
+  <date>2024-11-12T11:24:26.448778Z</date>
+  <millis>1731410666448</millis>
+  <nanos>778000</nanos>
+  <sequence>15</sequence>
+  <logger>org.example.utility.JsonWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.JsonWriter</class>
+  <method>generateJson</method>
+  <thread>1</thread>
+  <message>Directory is already exist</message>
+</record>
+<record>
+  <date>2024-11-12T11:24:26.463661Z</date>
+  <millis>1731410666463</millis>
+  <nanos>661000</nanos>
+  <sequence>16</sequence>
+  <logger>org.example.utility.JsonWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.JsonWriter</class>
+  <method>studentsJson</method>
+  <thread>1</thread>
+  <message>Student JSON created successfully</message>
+</record>
+<record>
+  <date>2024-11-12T11:24:26.465017Z</date>
+  <millis>1731410666465</millis>
+  <nanos>17000</nanos>
+  <sequence>17</sequence>
+  <logger>org.example.utility.JsonWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.JsonWriter</class>
+  <method>universityJson</method>
+  <thread>1</thread>
+  <message>University JSON created successfully</message>
+</record>
+<record>
+  <date>2024-11-12T11:24:26.465826Z</date>
+  <millis>1731410666465</millis>
+  <nanos>826000</nanos>
+  <sequence>18</sequence>
+  <logger>org.example.utility.JsonWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.JsonWriter</class>
+  <method>statisticsJson</method>
+  <thread>1</thread>
+  <message>Statistics JSON created successfully</message>
+</record>
+<record>
+  <date>2024-11-12T11:24:26.466015Z</date>
+  <millis>1731410666466</millis>
+  <nanos>15000</nanos>
+  <sequence>19</sequence>
+  <logger>org.example.utility.JsonWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.JsonWriter</class>
+  <method>generateJson</method>
+  <thread>1</thread>
+  <message>JSON writing finished successfully</message>
+</record>
+<record>
+  <date>2024-11-12T11:24:26.466173Z</date>
+  <millis>1731410666466</millis>
+  <nanos>173000</nanos>
+  <sequence>20</sequence>
+  <logger>org.example.Main</logger>
+  <level>INFO</level>
+  <class>org.example.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Application finished its work. Job is done</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2024-11-12T11:25:45.565352Z</date>
+  <millis>1731410745565</millis>
+  <nanos>352000</nanos>
+  <sequence>0</sequence>
+  <logger>org.example.Main</logger>
+  <level>INFO</level>
+  <class>org.example.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Application started, Logger configured</message>
+</record>
+<record>
+  <date>2024-11-12T11:25:45.602942Z</date>
+  <millis>1731410745602</millis>
+  <nanos>942000</nanos>
+  <sequence>1</sequence>
+  <logger>org.example.xlsxActions.xlsxRead</logger>
+  <level>INFO</level>
+  <class>org.example.xlsxActions.xlsxRead</class>
+  <method>getUnivercities</method>
+  <thread>1</thread>
+  <message>Starting read xlsx file: Universities sheet</message>
+</record>
+<record>
+  <date>2024-11-12T11:25:46.112991Z</date>
+  <millis>1731410746112</millis>
+  <nanos>991000</nanos>
+  <sequence>2</sequence>
+  <logger>org.example.xlsxActions.xlsxRead</logger>
+  <level>INFO</level>
+  <class>org.example.xlsxActions.xlsxRead</class>
+  <method>getUnivercities</method>
+  <thread>1</thread>
+  <message>Reading xlsx file: Universities sheet finished successfully</message>
+</record>
+<record>
+  <date>2024-11-12T11:25:46.114128Z</date>
+  <millis>1731410746114</millis>
+  <nanos>128000</nanos>
+  <sequence>3</sequence>
+  <logger>org.example.xlsxActions.xlsxRead</logger>
+  <level>INFO</level>
+  <class>org.example.xlsxActions.xlsxRead</class>
+  <method>getStudents</method>
+  <thread>1</thread>
+  <message>Starting read xlsx file: students sheet</message>
+</record>
+<record>
+  <date>2024-11-12T11:25:46.133033Z</date>
+  <millis>1731410746133</millis>
+  <nanos>33000</nanos>
+  <sequence>4</sequence>
+  <logger>org.example.xlsxActions.xlsxRead</logger>
+  <level>INFO</level>
+  <class>org.example.xlsxActions.xlsxRead</class>
+  <method>getStudents</method>
+  <thread>1</thread>
+  <message>Reading xlsx file: students sheet finished successfully</message>
+</record>
+<record>
+  <date>2024-11-12T11:25:46.133903Z</date>
+  <millis>1731410746133</millis>
+  <nanos>903000</nanos>
+  <sequence>5</sequence>
+  <logger>org.example.utility.StatisticsUtil</logger>
+  <level>INFO</level>
+  <class>org.example.utility.StatisticsUtil</class>
+  <method>formStatistics</method>
+  <thread>1</thread>
+  <message>Calculating statistics started</message>
+</record>
+<record>
+  <date>2024-11-12T11:25:46.136454Z</date>
+  <millis>1731410746136</millis>
+  <nanos>454000</nanos>
+  <sequence>6</sequence>
+  <logger>org.example.utility.StatisticsUtil</logger>
+  <level>INFO</level>
+  <class>org.example.utility.StatisticsUtil</class>
+  <method>formStatistics</method>
+  <thread>1</thread>
+  <message>Calculating statistics finished successfully. 
+ Statistic list is 4 rows long. </message>
+</record>
+<record>
+  <date>2024-11-12T11:25:46.137475Z</date>
+  <millis>1731410746137</millis>
+  <nanos>475000</nanos>
+  <sequence>7</sequence>
+  <logger>org.example.xlsxActions.xlsxWrite</logger>
+  <level>INFO</level>
+  <class>org.example.xlsxActions.xlsxWrite</class>
+  <method>writeXlsx</method>
+  <thread>1</thread>
+  <message>Starting write xlsx file</message>
+</record>
+<record>
+  <date>2024-11-12T11:25:46.189539Z</date>
+  <millis>1731410746189</millis>
+  <nanos>539000</nanos>
+  <sequence>8</sequence>
+  <logger>org.example.xlsxActions.xlsxWrite</logger>
+  <level>INFO</level>
+  <class>org.example.xlsxActions.xlsxWrite</class>
+  <method>writeXlsx</method>
+  <thread>1</thread>
+  <message>Data has been written into xlsx file successfully</message>
+</record>
+<record>
+  <date>2024-11-12T11:25:46.190346Z</date>
+  <millis>1731410746190</millis>
+  <nanos>346000</nanos>
+  <sequence>9</sequence>
+  <logger>org.example.utility.XmlWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.XmlWriter</class>
+  <method>generateXml</method>
+  <thread>1</thread>
+  <message>XML marshalling is started</message>
+</record>
+<record>
+  <date>2024-11-12T11:25:46.242820Z</date>
+  <millis>1731410746242</millis>
+  <nanos>820000</nanos>
+  <sequence>10</sequence>
+  <logger>org.example.utility.XmlWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.XmlWriter</class>
+  <method>generateXml</method>
+  <thread>1</thread>
+  <message>New directory created successfully </message>
+</record>
+<record>
+  <date>2024-11-12T11:25:46.243115Z</date>
+  <millis>1731410746243</millis>
+  <nanos>115000</nanos>
+  <sequence>11</sequence>
+  <logger>org.example.utility.XmlWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.XmlWriter</class>
+  <method>generateXml</method>
+  <thread>1</thread>
+  <message>Directory is already exist</message>
+</record>
+<record>
+  <date>2024-11-12T11:25:46.248734Z</date>
+  <millis>1731410746248</millis>
+  <nanos>734000</nanos>
+  <sequence>12</sequence>
+  <logger>org.example.utility.XmlWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.XmlWriter</class>
+  <method>generateXml</method>
+  <thread>1</thread>
+  <message>XML marshalling finished successfully </message>
+</record>
+<record>
+  <date>2024-11-12T11:25:46.249203Z</date>
+  <millis>1731410746249</millis>
+  <nanos>203000</nanos>
+  <sequence>13</sequence>
+  <logger>org.example.utility.JsonWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.JsonWriter</class>
+  <method>generateJson</method>
+  <thread>1</thread>
+  <message>JSON writing started</message>
+</record>
+<record>
+  <date>2024-11-12T11:25:46.249456Z</date>
+  <millis>1731410746249</millis>
+  <nanos>456000</nanos>
+  <sequence>14</sequence>
+  <logger>org.example.utility.JsonWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.JsonWriter</class>
+  <method>generateJson</method>
+  <thread>1</thread>
+  <message>New directory created successfully </message>
+</record>
+<record>
+  <date>2024-11-12T11:25:46.249656Z</date>
+  <millis>1731410746249</millis>
+  <nanos>656000</nanos>
+  <sequence>15</sequence>
+  <logger>org.example.utility.JsonWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.JsonWriter</class>
+  <method>generateJson</method>
+  <thread>1</thread>
+  <message>Directory is already exist</message>
+</record>
+<record>
+  <date>2024-11-12T11:25:46.265043Z</date>
+  <millis>1731410746265</millis>
+  <nanos>43000</nanos>
+  <sequence>16</sequence>
+  <logger>org.example.utility.JsonWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.JsonWriter</class>
+  <method>studentsJson</method>
+  <thread>1</thread>
+  <message>Student JSON created successfully</message>
+</record>
+<record>
+  <date>2024-11-12T11:25:46.266375Z</date>
+  <millis>1731410746266</millis>
+  <nanos>375000</nanos>
+  <sequence>17</sequence>
+  <logger>org.example.utility.JsonWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.JsonWriter</class>
+  <method>universityJson</method>
+  <thread>1</thread>
+  <message>University JSON created successfully</message>
+</record>
+<record>
+  <date>2024-11-12T11:25:46.267139Z</date>
+  <millis>1731410746267</millis>
+  <nanos>139000</nanos>
+  <sequence>18</sequence>
+  <logger>org.example.utility.JsonWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.JsonWriter</class>
+  <method>statisticsJson</method>
+  <thread>1</thread>
+  <message>Statistics JSON created successfully</message>
+</record>
+<record>
+  <date>2024-11-12T11:25:46.267325Z</date>
+  <millis>1731410746267</millis>
+  <nanos>325000</nanos>
+  <sequence>19</sequence>
+  <logger>org.example.utility.JsonWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.JsonWriter</class>
+  <method>generateJson</method>
+  <thread>1</thread>
+  <message>JSON writing finished successfully</message>
+</record>
+<record>
+  <date>2024-11-12T11:25:46.267480Z</date>
+  <millis>1731410746267</millis>
+  <nanos>480000</nanos>
+  <sequence>20</sequence>
+  <logger>org.example.Main</logger>
+  <level>INFO</level>
+  <class>org.example.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Application finished its work. Job is done</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2024-11-12T11:26:57.459675Z</date>
+  <millis>1731410817459</millis>
+  <nanos>675000</nanos>
+  <sequence>0</sequence>
+  <logger>org.example.Main</logger>
+  <level>INFO</level>
+  <class>org.example.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Application started, Logger configured</message>
+</record>
+<record>
+  <date>2024-11-12T11:26:57.510389Z</date>
+  <millis>1731410817510</millis>
+  <nanos>389000</nanos>
+  <sequence>1</sequence>
+  <logger>org.example.xlsxActions.xlsxRead</logger>
+  <level>INFO</level>
+  <class>org.example.xlsxActions.xlsxRead</class>
+  <method>getUnivercities</method>
+  <thread>1</thread>
+  <message>Starting read xlsx file: Universities sheet</message>
+</record>
+<record>
+  <date>2024-11-12T11:26:58.044849Z</date>
+  <millis>1731410818044</millis>
+  <nanos>849000</nanos>
+  <sequence>2</sequence>
+  <logger>org.example.xlsxActions.xlsxRead</logger>
+  <level>INFO</level>
+  <class>org.example.xlsxActions.xlsxRead</class>
+  <method>getUnivercities</method>
+  <thread>1</thread>
+  <message>Reading xlsx file: Universities sheet finished successfully</message>
+</record>
+<record>
+  <date>2024-11-12T11:26:58.046799Z</date>
+  <millis>1731410818046</millis>
+  <nanos>799000</nanos>
+  <sequence>3</sequence>
+  <logger>org.example.xlsxActions.xlsxRead</logger>
+  <level>INFO</level>
+  <class>org.example.xlsxActions.xlsxRead</class>
+  <method>getStudents</method>
+  <thread>1</thread>
+  <message>Starting read xlsx file: students sheet</message>
+</record>
+<record>
+  <date>2024-11-12T11:26:58.069463Z</date>
+  <millis>1731410818069</millis>
+  <nanos>463000</nanos>
+  <sequence>4</sequence>
+  <logger>org.example.xlsxActions.xlsxRead</logger>
+  <level>INFO</level>
+  <class>org.example.xlsxActions.xlsxRead</class>
+  <method>getStudents</method>
+  <thread>1</thread>
+  <message>Reading xlsx file: students sheet finished successfully</message>
+</record>
+<record>
+  <date>2024-11-12T11:26:58.070547Z</date>
+  <millis>1731410818070</millis>
+  <nanos>547000</nanos>
+  <sequence>5</sequence>
+  <logger>org.example.utility.StatisticsUtil</logger>
+  <level>INFO</level>
+  <class>org.example.utility.StatisticsUtil</class>
+  <method>formStatistics</method>
+  <thread>1</thread>
+  <message>Calculating statistics started</message>
+</record>
+<record>
+  <date>2024-11-12T11:26:58.073152Z</date>
+  <millis>1731410818073</millis>
+  <nanos>152000</nanos>
+  <sequence>6</sequence>
+  <logger>org.example.utility.StatisticsUtil</logger>
+  <level>INFO</level>
+  <class>org.example.utility.StatisticsUtil</class>
+  <method>formStatistics</method>
+  <thread>1</thread>
+  <message>Calculating statistics finished successfully. 
+ Statistic list is 4 rows long. </message>
+</record>
+<record>
+  <date>2024-11-12T11:26:58.074209Z</date>
+  <millis>1731410818074</millis>
+  <nanos>209000</nanos>
+  <sequence>7</sequence>
+  <logger>org.example.xlsxActions.xlsxWrite</logger>
+  <level>INFO</level>
+  <class>org.example.xlsxActions.xlsxWrite</class>
+  <method>writeXlsx</method>
+  <thread>1</thread>
+  <message>Starting write xlsx file</message>
+</record>
+<record>
+  <date>2024-11-12T11:26:58.132883Z</date>
+  <millis>1731410818132</millis>
+  <nanos>883000</nanos>
+  <sequence>8</sequence>
+  <logger>org.example.xlsxActions.xlsxWrite</logger>
+  <level>INFO</level>
+  <class>org.example.xlsxActions.xlsxWrite</class>
+  <method>writeXlsx</method>
+  <thread>1</thread>
+  <message>Data has been written into xlsx file successfully</message>
+</record>
+<record>
+  <date>2024-11-12T11:26:58.134543Z</date>
+  <millis>1731410818134</millis>
+  <nanos>543000</nanos>
+  <sequence>9</sequence>
+  <logger>org.example.utility.XmlWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.XmlWriter</class>
+  <method>generateXml</method>
+  <thread>1</thread>
+  <message>XML marshalling is started</message>
+</record>
+<record>
+  <date>2024-11-12T11:26:58.219683Z</date>
+  <millis>1731410818219</millis>
+  <nanos>683000</nanos>
+  <sequence>10</sequence>
+  <logger>org.example.utility.XmlWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.XmlWriter</class>
+  <method>generateXml</method>
+  <thread>1</thread>
+  <message> Directory is already exist </message>
+</record>
+<record>
+  <date>2024-11-12T11:26:58.220305Z</date>
+  <millis>1731410818220</millis>
+  <nanos>305000</nanos>
+  <sequence>11</sequence>
+  <logger>org.example.utility.XmlWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.XmlWriter</class>
+  <method>generateXml</method>
+  <thread>1</thread>
+  <message> New directory created successfully </message>
+</record>
+<record>
+  <date>2024-11-12T11:26:58.228149Z</date>
+  <millis>1731410818228</millis>
+  <nanos>149000</nanos>
+  <sequence>12</sequence>
+  <logger>org.example.utility.XmlWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.XmlWriter</class>
+  <method>generateXml</method>
+  <thread>1</thread>
+  <message>XML marshalling finished successfully </message>
+</record>
+<record>
+  <date>2024-11-12T11:26:58.228664Z</date>
+  <millis>1731410818228</millis>
+  <nanos>664000</nanos>
+  <sequence>13</sequence>
+  <logger>org.example.utility.JsonWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.JsonWriter</class>
+  <method>generateJson</method>
+  <thread>1</thread>
+  <message>JSON writing started</message>
+</record>
+<record>
+  <date>2024-11-12T11:26:58.228919Z</date>
+  <millis>1731410818228</millis>
+  <nanos>919000</nanos>
+  <sequence>14</sequence>
+  <logger>org.example.utility.JsonWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.JsonWriter</class>
+  <method>generateJson</method>
+  <thread>1</thread>
+  <message> Directory is already exist </message>
+</record>
+<record>
+  <date>2024-11-12T11:26:58.229100Z</date>
+  <millis>1731410818229</millis>
+  <nanos>100000</nanos>
+  <sequence>15</sequence>
+  <logger>org.example.utility.JsonWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.JsonWriter</class>
+  <method>generateJson</method>
+  <thread>1</thread>
+  <message>New directory created successfully </message>
+</record>
+<record>
+  <date>2024-11-12T11:26:58.249625Z</date>
+  <millis>1731410818249</millis>
+  <nanos>625000</nanos>
+  <sequence>16</sequence>
+  <logger>org.example.utility.JsonWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.JsonWriter</class>
+  <method>studentsJson</method>
+  <thread>1</thread>
+  <message>Student JSON created successfully</message>
+</record>
+<record>
+  <date>2024-11-12T11:26:58.251481Z</date>
+  <millis>1731410818251</millis>
+  <nanos>481000</nanos>
+  <sequence>17</sequence>
+  <logger>org.example.utility.JsonWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.JsonWriter</class>
+  <method>universityJson</method>
+  <thread>1</thread>
+  <message>University JSON created successfully</message>
+</record>
+<record>
+  <date>2024-11-12T11:26:58.252388Z</date>
+  <millis>1731410818252</millis>
+  <nanos>388000</nanos>
+  <sequence>18</sequence>
+  <logger>org.example.utility.JsonWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.JsonWriter</class>
+  <method>statisticsJson</method>
+  <thread>1</thread>
+  <message>Statistics JSON created successfully</message>
+</record>
+<record>
+  <date>2024-11-12T11:26:58.252589Z</date>
+  <millis>1731410818252</millis>
+  <nanos>589000</nanos>
+  <sequence>19</sequence>
+  <logger>org.example.utility.JsonWriter</logger>
+  <level>INFO</level>
+  <class>org.example.utility.JsonWriter</class>
+  <method>generateJson</method>
+  <thread>1</thread>
+  <message>JSON writing finished successfully</message>
+</record>
+<record>
+  <date>2024-11-12T11:26:58.252743Z</date>
+  <millis>1731410818252</millis>
+  <nanos>743000</nanos>
+  <sequence>20</sequence>
+  <logger>org.example.Main</logger>
+  <level>INFO</level>
+  <class>org.example.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Application finished its work. Job is done</message>
+</record>
+</log>

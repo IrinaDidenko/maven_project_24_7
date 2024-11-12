@@ -10,6 +10,7 @@ import org.example.models.Student;
 import org.example.models.University;
 import org.example.utility.StatisticsUtil;
 import org.example.utility.XmlWriter;
+import org.example.utility.JsonWriter;
 import org.example.xlsxActions.xlsxRead;
 import org.example.utility.ComparatorUtil;
 import org.example.xlsxActions.xlsxWrite;
@@ -53,7 +54,7 @@ public class Main {
 
         List<Statistics>statisticsList= StatisticsUtil.formStatistics(students, universities);
         xlsxWrite.writeXlsx("statistics.xlsx", statisticsList);
-        logger.log(INFO, "Application finished its work. Job is done");
+
 
         DataStructure dataStructure = new DataStructure();
         dataStructure.setStudentList(students);
@@ -62,5 +63,7 @@ public class Main {
         dataStructure.setProcessedDate(new Date());
 
         XmlWriter.generateXml(dataStructure);
+        JsonWriter.generateJson(dataStructure);
+        logger.log(INFO, "Application finished its work. Job is done");
     }
 }
